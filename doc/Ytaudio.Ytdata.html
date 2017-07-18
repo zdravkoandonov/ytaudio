@@ -1,0 +1,305 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.16.2">
+    <title>Ytaudio.Ytdata – ytaudio v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-268c9dc719.css" />
+    
+    <script src="dist/sidebar_items-b60edc327b.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        ytaudio
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <span class="icon-search" aria-hidden="true"></span>
+    <input type="text" class="sidebar-searchInput" placeholder="search" aria-label="Search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">ytaudio v0.1.0</small>
+        Ytaudio.Ytdata
+        
+      </h1>
+
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detail_playlist/1">detail_playlist(playlist_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches details for playlist with id <code class="inline">playlist_id</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#detail_video/1">detail_video(video_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches details for video with id <code class="inline">video_id</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_playlist/2">list_playlist(playlist_id, opts \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetch a list of videos on a playlist with id <code class="inline">playlist_id</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_playlist_video_ids/2">list_playlist_video_ids(playlist_id, opts \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetch a list of the ids of videos on a playlist with id <code class="inline">playlist_id</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#recommend/2">recommend(video_id, opts \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetch a list of recommended videos based on a video with id <code class="inline">video_id</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#search_by_query/3">search_by_query(type, query, opts \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetch a list of the videos or playlists based on <code class="inline">type</code> for the search <code class="inline">query</code></p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="detail_playlist/1">
+  
+  <div class="detail-header">
+    <a href="#detail_playlist/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">detail_playlist(playlist_id)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetches details for playlist with id <code class="inline">playlist_id</code>.</p>
+<p>The playlist is represented as an IO list and has a title, a channel title, a publish date and a description.</p>
+
+  </section>
+</div>
+<div class="detail" id="detail_video/1">
+  
+  <div class="detail-header">
+    <a href="#detail_video/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">detail_video(video_id)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetches details for video with id <code class="inline">video_id</code>.</p>
+<p>The video is represented as an IO list and has a title, a channel title, a publish date and a description.</p>
+
+  </section>
+</div>
+<div class="detail" id="list_playlist/2">
+  
+    <span id="list_playlist/1"></span>
+  
+  <div class="detail-header">
+    <a href="#list_playlist/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_playlist(playlist_id, opts \\ %{})</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetch a list of videos on a playlist with id <code class="inline">playlist_id</code>.</p>
+<p>Every video is represented as an IO list and has a title, an id, a channel title and a publish date.</p>
+
+  </section>
+</div>
+<div class="detail" id="list_playlist_video_ids/2">
+  
+    <span id="list_playlist_video_ids/1"></span>
+  
+  <div class="detail-header">
+    <a href="#list_playlist_video_ids/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_playlist_video_ids(playlist_id, opts \\ %{})</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetch a list of the ids of videos on a playlist with id <code class="inline">playlist_id</code>.</p>
+
+  </section>
+</div>
+<div class="detail" id="recommend/2">
+  
+    <span id="recommend/1"></span>
+  
+  <div class="detail-header">
+    <a href="#recommend/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">recommend(video_id, opts \\ %{})</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetch a list of recommended videos based on a video with id <code class="inline">video_id</code>.</p>
+<p>The returned items are videos that are represented as an IO list that
+contains a title, an id, a channel title and a publish date.</p>
+
+  </section>
+</div>
+<div class="detail" id="search_by_query/3">
+  
+    <span id="search_by_query/2"></span>
+  
+  <div class="detail-header">
+    <a href="#search_by_query/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">search_by_query(type, query, opts \\ %{})</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Fetch a list of the videos or playlists based on <code class="inline">type</code> for the search <code class="inline">query</code>.</p>
+<p>If the returned items are videos they are represented as an IO list that
+contains a title, an id, a channel title, a publish date and a description.</p>
+<p>If the returned items are playlists they are represented as an IO list that
+contains a title, an id, a channel title and a publish date.</p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.16.2),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle"><span class="sr-only">Switch theme</span></button>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-4988ddd06b.js"></script>
+  </body>
+</html>
+
